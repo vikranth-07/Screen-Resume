@@ -16,8 +16,13 @@ st.set_page_config(
 
 nltk.download('stopwords')
 
-model = pickle.load(open('resume_model.pkl', 'rb'))
-tfidf = pickle.load(open('tfidf_vectorizer.pkl', 'rb'))
+model = pickle.load(
+    open('/content/drive/MyDrive/resume_model.pkl', 'rb')
+)
+
+tfidf = pickle.load(
+    open('/content/drive/MyDrive/tfidf_vectorizer.pkl', 'rb')
+)
 
 stop_words = set(stopwords.words('english'))
 
